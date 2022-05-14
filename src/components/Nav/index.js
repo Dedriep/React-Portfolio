@@ -1,16 +1,22 @@
 import React from "react";
 
-function Nav (){
+function Nav (props){
+
+    const [aboutDefault, selectPage] = props
+   
+    
     return(
         <div>
+
+    
 <ul className="navList">
-    <li> <a>About Me</a></li>
+    <li> <a href="about" onClick={() =>aboutDefault(true) }>About Me</a></li>
 
-    <li><a>My Projects</a></li>
+    <li><a href="projects" onClick={() =>selectPage(false) }>My Projects</a></li>
 
-    <li><a>Contact Me</a></li>
+    <li><a href="contact">Contact Me</a></li>
 
-    <li><a>Resume</a></li>
+    <li><a href="resume">Resume</a></li>
 
 </ul>
         </div>

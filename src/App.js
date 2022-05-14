@@ -8,23 +8,56 @@ import Resume from './components/Resume';
 import Contact from './components/Contact';
 import About from './components/About';
 
+const [aboutDefault, selectPage] = useState("#about")
 
 function App() {
-  return (
+
+
+  {
+  function displayContent (selectPage){
+    switch (selectPage){
+
+    case selectPage === "#projects":
+    <Projects></Projects>;
+    break;
+    case selectPage === "#contact":
+      <Contact></Contact>
+      break;
+    case selectPage === "#resume":
+      <Resume></Resume>
+      break;
+      default:
+        <About></About>
+      }}
+}  
+
+
+
+return (
 
     <div>
- <Header></Header>
-<main className = 'mainContent'>
-  <About></About>
-<Projects></Projects>
-<Resume></Resume>
-<Contact></Contact>
+      <Header
+       aboutDefault = {aboutDefault}
+       selectPage = {selectPage}>
+      </Header>
+      <main className='mainContent'>
+        {/* <About></About>
+        <Projects></Projects>
+        <Resume></Resume>
+        <Contact></Contact>
 
-</main>
-<Footer></Footer>
+ */}
+{        this.displayContent(selectPage)}
+
+      </main>
+      <Footer></Footer>
     </div>
-  
+
   );
 }
 
+
+
+
+  
 export default App;
