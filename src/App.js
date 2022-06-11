@@ -8,28 +8,36 @@ import Resume from './components/Resume';
 import Contact from './components/Contact';
 import About from './components/About';
 
-const [aboutDefault, selectPage] = useState("#about")
 
 function App() {
 
+  const [sections] = useState([
+    {sectionName: "#about"}, 
+    {sectionName: "#projects"},
+    {sectionName: "#resume"},
+    {sectionName:"#contact"}
+  ])
 
-  {
-  function displayContent (selectPage){
-    switch (selectPage){
+  const [aboutDefault, setAboutDefault] = useState(sections[0])
+  
 
-    case selectPage === "#projects":
-    <Projects></Projects>;
-    break;
-    case selectPage === "#contact":
-      <Contact></Contact>
-      break;
-    case selectPage === "#resume":
-      <Resume></Resume>
-      break;
-      default:
-        <About></About>
-      }}
-}  
+//   {
+//   function displayContent (setAboutDefault){
+//     switch (setAboutDefault){
+
+//     case setAboutDefault === "#projects":
+//     <Projects></Projects>;
+//     break;
+//     case setAboutDefault === "#contact":
+//       <Contact></Contact>
+//       break;
+//     case setAboutDefault === "#resume":
+//       <Resume></Resume>
+//       break;
+//       default:
+//         <About></About>
+//       }}
+// }  
 
 
 
@@ -38,16 +46,16 @@ return (
     <div>
       <Header
        aboutDefault = {aboutDefault}
-       selectPage = {selectPage}>
+       selectPage = {setAboutDefault}>
       </Header>
       <main className='mainContent'>
-        {/* <About></About>
+        <About></About>
         <Projects></Projects>
         <Resume></Resume>
         <Contact></Contact>
 
- */}
-{        this.displayContent(selectPage)}
+
+{/* {        this.displayContent(setAboutDefault)} */}
 
       </main>
       <Footer></Footer>

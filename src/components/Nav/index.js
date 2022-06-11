@@ -2,9 +2,9 @@ import React from "react";
 
 function Nav (props){
 
-    const [aboutDefault, selectPage] = props
+    const [aboutDefault, setAboutDefault] = props
    
-    
+
     return(
         <div>
 
@@ -12,7 +12,7 @@ function Nav (props){
 <ul className="navList">
     <li> <a href="about" onClick={() =>aboutDefault(true) }>About Me</a></li>
 
-    <li><a href="projects" onClick={() =>selectPage(false) }>My Projects</a></li>
+    <li><a href="projects" onClick={() =>setAboutDefault(false) }>My Projects</a></li>
 
     <li><a href="contact">Contact Me</a></li>
 
