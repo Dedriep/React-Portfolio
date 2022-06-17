@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Link } from "react-router-dom";
+import { Link, Outlet} from "react-router-dom";
 
 
 
@@ -30,24 +30,27 @@ function Nav (props){
 
        <ul className="navList">
     <li > 
-    <Link to='/'>About</Link>    
+    <Link to="/">About</Link>    
     </li>
 
     <li > 
-    <Link to='/projects'>Projects</Link>    
+    <Link to="/projects">Projects</Link>    
     </li>
 
     <li > 
-    <Link to='/contact'>Contact Me</Link>    
+    <Link to="/contact">Contact Me</Link>    
     </li>
 
 
   <li > 
     <Link to='/resume'>Resume</Link>    
     </li>
+
 </ul>       
        </nav>
        
+       <Outlet />
+
        </>
 
         
