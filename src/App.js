@@ -10,7 +10,6 @@ import {
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Projects from './components/Projects'
-import Resume from './components/Resume';
 import Contact from './components/Contact';
 import About from './components/About';
 
@@ -41,7 +40,6 @@ return (
       <Route index element={<About />} />
       <Route path="projects" element={<Projects />} />
       <Route path="contact" element={<Contact />} />
-      <Route path="resume" element={<Resume />} />
  </Route>
   </Routes>
 </BrowserRouter>

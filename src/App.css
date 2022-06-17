@@ -13,9 +13,19 @@
 
 }
 
+a{
+  color: rgb(139, 114, 142)
+}
+
 .mainContent{
   background-color: rgb(192, 229, 200);
-  height: 700px;
+  height: 1000px;
+  color: black;
+}
+
+#centered{
+
+  padding: 200px
 }
 
 .navList{
@@ -23,7 +33,7 @@
   display: inline;
 }
 
-li{
+.navLi{
   float: left;
   padding-left: 50px;
   text-align: center
@@ -34,10 +44,19 @@ li{
   background-color: rgb(22, 48, 43);
   color: rgb(192, 229, 200);
   text-align: center;
-
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 
 
 }
+
+.projectList{
+  list-style: none;
+  display: inline;  
+
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

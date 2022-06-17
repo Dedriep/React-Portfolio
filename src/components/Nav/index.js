@@ -29,22 +29,18 @@ function Nav (props){
        <nav>
 
        <ul className="navList">
-    <li > 
+    <li className= 'navLi'> 
     <Link to="/">About</Link>    
     </li>
 
-    <li > 
+    <li className= 'navLi' > 
     <Link to="/projects">Projects</Link>    
     </li>
 
-    <li > 
+    <li className= 'navLi'> 
     <Link to="/contact">Contact Me</Link>    
     </li>
 
-
-  <li > 
-    <Link to='/resume'>Resume</Link>    
-    </li>
 
 </ul>       
        </nav>
