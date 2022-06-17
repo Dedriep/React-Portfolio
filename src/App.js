@@ -21,23 +21,7 @@ function App() {
   const [aboutDefault, setAboutDefault] = useState(sections[0])
   
 
-//   {
-//   function displayContent (setAboutDefault){
-//     switch (setAboutDefault){
 
-//     case setAboutDefault === "#projects":
-//     <Projects></Projects>;
-//     break;
-//     case setAboutDefault === "#contact":
-//       <Contact></Contact>
-//       break;
-//     case setAboutDefault === "#resume":
-//       <Resume></Resume>
-//       break;
-//       default:
-//         <About></About>
-//       }}
-// }  
 
 
 
@@ -53,10 +37,6 @@ return (
         <Projects></Projects>
         <Resume></Resume>
         <Contact></Contact>
-
-
-{/* {        this.displayContent(setAboutDefault)} */}
-
       </main>
       <Footer></Footer>
     </div>
