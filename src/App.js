@@ -33,18 +33,18 @@ function App() {
 return (
 
 
-  <div> 
+  <div>
   <BrowserRouter>
-  <Routes>
-    <Route path="/" element={<Header />}>
-      <Route index element={<About />} />
-      <Route path="projects" element={<Projects />} />
-      <Route path="contact" element={<Contact />} />
- </Route>
-  </Routes>
-</BrowserRouter>
-<Footer />  
-  </div>
+      <Header/>
+        <Routes>
+                <Route exact path="/" element={<About/>}>
+                <Route  exact path="/projects" element={<Projects/>}/>
+                <Route exact path="contact" element={<Contact/>}/>
+            </Route>
+        </Routes>
+      <Footer/>
+  </BrowserRouter>
+</div>
 
  
 
