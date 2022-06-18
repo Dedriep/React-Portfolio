@@ -36,16 +36,14 @@ return (
   <div>
   <BrowserRouter>
       <Header/>
-        <Routes>
-                <Route exact path="/" element={<About/>}>
-                <Route  exact path="/projects" element={<Projects/>}/>
-                <Route exact path="contact" element={<Contact/>}/>
-            </Route>
-        </Routes>
+          <Routes>
+              <Route path="/" element={<About/>}/>
+              <Route path={"/projects"} element={<Projects/>}/>
+              <Route path={"/contact"} element={<Contact/>}/>
+          </Routes>
       <Footer/>
   </BrowserRouter>
 </div>
-
  
 
 
