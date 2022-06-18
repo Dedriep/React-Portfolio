@@ -34,7 +34,7 @@ return (
 
 
   <div>
-  <BrowserRouter>
+  <BrowserRouter basename= '/'>
       <Header/>
           <Routes>
               <Route path="/" element={<About/>}/>
